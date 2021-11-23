@@ -41,7 +41,8 @@ body {
 .flex1 {
   display: flex;
   flex-wrap: wrap;
-  max-width: 55%;
+  max-width: 970px;
+  min-width: 680px;
 }
 .hour-box1 {
   background-color: var(--cc-light-red-work);
@@ -202,6 +203,9 @@ img {
     background-color: var(--cc-very-dark-blue-nt);
     display: block;
   }
+  .flex1 {
+    min-width: 0;
+  }
   /* PURPLEBOX RESPONSIVE */
   .left {
     float: none;
@@ -279,6 +283,7 @@ img {
     width: 80vw;
     min-width: 289px;
     height: 50%;
+    margin-bottom: 80px;
   }
   /* Text flexbox responsive */
   .textbox {
