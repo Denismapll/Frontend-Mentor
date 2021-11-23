@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --cc-bright-orange: hsl(31, 77%, 52%);
+  --cc-dark-cyan: hsl(184, 100%, 22%);
+  --cc-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --cc-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --cc-very-light-grey: hsl(0, 0%, 95%);
+}
+body,
+html {
+  background-color: var(--cc-very-light-grey);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.containerbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.container1 {
+  width: 200px;
+  height: 400px;
+  padding: 50px;
+  background-color: var(--cc-bright-orange);
+  position: relative;
+  color: var(--cc-transparent-white);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-left: 3rem;
+}
+.container2 {
+  width: 200px;
+  height: 400px;
+  padding: 50px;
+  background-color: var(--cc-dark-cyan);
+  position: relative;
+  color: var(--cc-transparent-white);
+}
+.container3 {
+  width: 200px;
+  height: 400px;
+  padding: 50px;
+  background-color: var(--cc-very-dark-cyan);
+  position: relative;
+  color: var(--cc-transparent-white);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-right: 3rem;
+}
+.title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  color: var(--cc-very-light-grey);
+  padding-bottom: 10px;
+  font-size: 36px;
+}
+.description {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.button1 {
+  position: absolute;
+  bottom: 50px;
+  left: 49px;
+  font-size: 19px;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1rem 1.95rem 1rem 1.95rem;
+  border-radius: 30px;
+  border: 3px solid var(--cc-transparent-white);
+}
+#button1 {
+  color: var(--cc-bright-orange);
+}
+#button2 {
+  color: var(--cc-dark-cyan);
+}
+#button3 {
+  color: var(--cc-very-dark-cyan);
+}
+#button1:hover {
+  background-color: var(--cc-bright-orange);
+  color: var(--cc-transparent-white);
+  border: 3px solid var(--cc-transparent-white);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#button2:hover {
+  background-color: var(--cc-dark-cyan);
+  color: var(--cc-transparent-white);
+  border: 3px solid var(--cc-transparent-white);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#button3:hover {
+  background-color: var(--cc-very-dark-cyan);
+  color: var(--cc-transparent-white);
+  border: 3px solid var(--cc-transparent-white);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 978px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .containerbox {
+    display: table;
+    margin: auto;
+    width: 300px;
+  }
+  .container1 {
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 0;
+    margin-top: 25px;
+  }
+  .container3 {
+    border-radius: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
