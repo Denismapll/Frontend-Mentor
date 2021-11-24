@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  /*primary color */
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  /*neutral color */
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--Light-grayish-blue);
+  line-height: 1.2em;
+  margin: 0;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+.wrapper {
+  max-width: 1200px;
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-auto-columns: minmax(210px, 275px);
+  grid-template-rows: 40vh;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+.wrapper > div {
+  border-radius: 10px;
+}
+.general-header {
+  padding: 1.5em 1.5em 0.7em 1.5em;
+}
+.photo {
+  border-radius: 3rem;
+  float: left;
+  margin-right: 20px;
+  width: 32px;
+}
+.quotation {
+  position: absolute;
+  opacity: 1;
+  right: 4rem;
+  top: 0;
+}
+.name {
+  margin: 0;
+  font-size: 1em;
+}
+.grad {
+  margin: 0;
+  font-size: 0.7em;
+  color: rgb(185, 185, 185);
+  opacity: 0.6;
+  font-weight: 600;
+}
+.name-grad {
+  font-size: 1em;
+  font-weight: 500;
+}
+.textbox {
+  padding: 0 30px 30px 30px;
+}
+.textbox > p {
+  margin: 0;
+}
+.text1 {
+  font-size: 1.2em;
+  font-weight: 600;
+  opacity: 0.95;
+}
+.text2 {
+  padding-top: 15px;
+  font-size: 0.9em;
+  color: white;
+  opacity: 0.6;
+  font-weight: 500;
+}
+.text2-black {
+  padding-top: 15px;
+  font-size: 0.9em;
+  color: black;
+  opacity: 0.6;
+  font-weight: 500;
+}
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+  position: relative;
+  max-height: 40vh;
+}
+.box1 > .text1 {
+  position: absolute;
+  z-index: 10;
+}
+.box2 {
+  color: whitesmoke;
+  max-height: 40vh;
+}
+.box3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  max-height: 80vh;
+}
+.box4 {
+  min-height: auto;
+  max-height: 40vh;
+}
+.box5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  color: whitesmoke;
+  max-height: 40vh;
+}
+.box1 > .opal {
+  background-color: var(--Moderate-violet);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.box2 > .opal {
+  background-color: var(--Very-dark-grayish-blue);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.box3 > .opal {
+  background-color: var(--White);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.box4 > .opal {
+  background-color: var(--White);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.box5 > .opal {
+  background-color: var(--Very-dark-blackish-blue);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1290px) {
+  html,
+  body {
+    overflow-y: visible;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw;
+    padding: 5vw;
+  }
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: white;
+    position: relative;
+    max-height: none;
+    min-width: 90vw;
+    margin-top: 5vw;
+  }
+  .box2 {
+    color: whitesmoke;
+    max-height: none;
+    min-width: 90vw;
+  }
+  .box3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-height: none;
+    min-width: 90vw;
+  }
+  .box4 {
+    min-height: auto;
+    max-height: none;
+    min-width: 90vw;
+  }
+  .box5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: whitesmoke;
+    max-height: none;
+    min-width: 90vw;
+    margin-bottom: 5vw;
+  }
+  .quotation {
+    right: 25px;
+  }
+  @media screen and (max-width: 345px) {
+    .quotation {
+      top: 100px;
+    }
+  }
+}
