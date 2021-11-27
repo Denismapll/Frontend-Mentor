@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+:root {
+  /* Primary */
+
+  --Dark-Blue-intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+  --Dark-Blue-main-background: hsl(218, 28%, 13%);
+  --Dark-Blue-footer-background: hsl(216, 53%, 9%);
+  --Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+
+  /* Accent */
+  --gradient: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+  --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+  --Light-Red-error: hsl(0, 100%, 63%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body,
+html {
+  background-color: var(--Dark-Blue-testimonials-background);
+  font-family: "Open Sans", sans-serif;
+  color: var(--White);
+  width: 100%;
+  height: 100%;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding: 30px;
+}
+.logo-div > .logo {
+  transform: scale(0.85);
+}
+.navbar > .nav-item {
+  display: flex;
+  padding: 15px;
+}
+.nav-item > li {
+  margin: 0 0.5em;
+  color: var(--White);
+}
+a {
+  color: inherit;
+  opacity: 0.8;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-image: url(../img/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+}
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  text-align: center;
+}
+figure > h1 {
+  width: 90%;
+  margin: 1em 0;
+}
+figure > p {
+  width: 63%;
+  margin-bottom: 1.5em;
+}
+figure > button {
+  width: 38%;
+  height: 50px;
+  border-radius: 2em;
+  background: var(--gradient);
+  color: var(--White);
+  font-weight: 700;
+  margin-bottom: 7em;
+}
+.bgcurvy {
+  position: absolute;
+  top: 700px;
+}
+.sec-cont1 {
+  width: 62%;
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+.sec-cont1 > div {
+  text-align: center;
+  padding: 2em;
+  opacity: 0.99;
+}
+.sec-cont2 {
+  width: 62%;
+  display: flex;
+  justify-content: center;
+  margin: 1.5em;
+}
+.sec-cont3 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+}
+.sec-cont3 > .sec-cont3-colum {
+  margin: 0 1.5rem;
+}
+.sec-cont3 > .sec-cont3-colum > a {
+  color: var(--Cyan-inside-call-to-action-gradient);
+}
+.sec-cont3 > .sec-cont3-colum > p {
+  margin: 1.5rem auto;
+}
+.sec-cont2 > div {
+  text-align: center;
+  padding: 1.5em;
+}
+.main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Dark-Blue-main-background);
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+.sec-cont4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin: 2rem 0 5rem 0;
+  background-image: url(../img/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
+.sec-cont4-grid {
+  background-color: var(--Dark-Blue-testimonials-background);
+  padding: 1rem;
+  margin: 2rem 1rem 0 0.5rem;
+}
+.sec-cont4-grid > h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.sec-cont4-grid > .name-photo {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.sec-cont4-grid > .name-photo > .photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+.sec-cont4-grid > .name-photo > .name > h1 {
+  font-size: 0.8rem;
+}
+.sec-cont4-grid > .name-photo > .name > h4 {
+  font-size: 0.7rem;
+}
+.foot {
+  width: 90%;
+  margin: 8rem auto 8rem auto;
+}
+.foot-flex {
+  display: flex;
+  width: 60%;
+}
+.logo-foot1 {
+  align-self: flex-start;
+  float: left;
+  margin-right: 1rem;
+}
+.phone-email {
+  display: flex;
+  flex-direction: column;
+}
+.log {
+  width: 45%;
+}
