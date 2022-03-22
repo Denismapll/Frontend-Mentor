@@ -91,11 +91,13 @@ body, html {
     background-color: var(--cc-White);
     color: var(--cc-Orange);
     cursor: pointer;
+    transition: 0.5s;
 }
 .ratingButtons:hover{
     background-color: var(--cc-Orange);
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 /* Container 2 */
