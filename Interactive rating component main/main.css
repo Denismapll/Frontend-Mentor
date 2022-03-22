@@ -1,0 +1,138 @@
+:root{ 
+    --cc-White: hsl(0, 0%, 100%);
+    --cc-Light-Grey: hsl(217, 12%, 63%);
+    --cc-Medium-Grey: hsl(216, 12%, 54%);
+    --cc-Dark-Blue: hsl(213, 19%, 18%);
+    --cc-Very-Dark-Blue: hsl(216, 12%, 8%);
+    --cc-greyButton: rgb(38,47,56);
+    --cc-container: rgb(32, 39, 49);
+
+    --cc-Orange: hsl(25, 97%, 53%);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    
+}
+.centralize {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cc-Very-Dark-Blue);
+}
+.container {
+    margin: 15px;
+    padding: 1.5em;
+    background-color: var(--cc-container);
+    height: 45%;
+    min-height: 310px;
+    max-height: 300px;
+    max-width: 320px;
+    min-width: 250px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.starIcon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2em;
+    padding: 1em;
+    background-color: var(--cc-greyButton);
+}
+.mainText {
+    color: var(--cc-White);
+    font-size: 1.8em;
+}
+.text {
+    color: var(--cc-Light-Grey);
+    margin: 0;
+    font-size: 0.9em; 
+}
+.ratingSection {
+    display: flex;
+    justify-content: space-between;
+}
+.ratingButtons {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 2em 0;
+    padding: 0;
+    font-weight: 700;
+    background-color: var(--cc-greyButton);
+    color: var(--cc-Light-Grey);
+    border: none;
+}
+.activeBut {
+    background-color: var(--cc-Medium-Grey);
+    color: white;
+}
+.submitButton {
+    background-color: var(--cc-Orange);
+    color: var(--cc-White);
+    width: 100%;
+    height: 3.3em;
+    min-height: 3.3em;
+    border-radius: 3em;
+    border: none;
+}
+/* Mouse em cima dos botoes */
+.submitButton:hover{
+    background-color: var(--cc-White);
+    color: var(--cc-Orange);
+    cursor: pointer;
+}
+.ratingButtons:hover{
+    background-color: var(--cc-Orange);
+    color: white;
+    cursor: pointer;
+}
+
+/* Container 2 */
+
+.container2 {
+    margin: 1.5em;
+    padding: 1.5em;
+    background-color: var(--cc-container);
+    height: 45%;
+    min-height: 310px;
+    max-height: 300px;
+    max-width: 320px;
+    min-width: 250px;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+.logoTkyou {
+    width: 160px;
+    height: 108px;
+}
+.finalRate {
+    margin: 15px 0;
+    background-color: var(--cc-greyButton);
+    color: var(--cc-Orange);
+    border-radius: 2em;
+    padding: 10px 7px 7px 7px;
+    font-weight: 400;
+    font-size: 0.9em;
+    width: max-content;
+}
+
+/* Responsividade para Desktop */
+
+@media screen and (max-width: 1440px){
+
+}
