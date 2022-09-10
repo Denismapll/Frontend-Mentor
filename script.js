@@ -5,7 +5,7 @@ const btn4 = document.getElementById('btn4')
 const btn5 = document.getElementById('btn5')
 
 btn1.addEventListener("click", (()=>{
-    window.location.href = "google.com"
+    window.location.href = "3 Column Previwer Card"
 }))
 btn2.addEventListener("click", (()=>{
     window.location.href = "google.com"
