@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+/* font-family: 'Red Hat Text', sans-serif; */
+body {
+  height: 100vh;
+  background: linear-gradient(
+    355deg,
+    rgba(36, 28, 43, 1) 0%,
+    rgba(30, 30, 40, 1) 100%
+  );
+  background: rgb(36, 28, 43);
+}
+.bgRight {
+  background-image: url(./img/bg-stars.svg);
+  background-size: cover;
+}
+.foot {
+  background-image: url(./img/pattern-hills.svg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: -680px;
+  background-size: 1200px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.mainBox {
+  font-family: "Red Hat Text", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 50vh;
+}
+.mainText {
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  margin-bottom: 45px;
+}
+
+.numbCountDown {
+  display: flex;
+}
+.numbCountDown > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+.numbCountDown > div > h1 {
+  color: #fd5d86;
+  margin: 1vw;
+  padding: 10px;
+  width: 65px;
+  background: linear-gradient(
+    to top,
+    #343550 0%,
+    #343550 50%,
+    #2c2c44 50%,
+    #2c2c44 100%
+  );
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.numbCountDown > div > h6 {
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #8a879b;
+}
+
+a {
+  margin: 0 15px 8vh 15px;
+}
+
+@media screen and (min-width: 520px) {
+  .foot {
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: 100%;
+  }
+
+  img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .numbCountDown {
+    transform: scale(160%);
+  }
+  .mainText {
+    transform: scale(80%);
+    margin-bottom: 120px;
+  }
+  .numbCountDown > div > h1 {
+    margin: 0.7vw;
+  }
+}
